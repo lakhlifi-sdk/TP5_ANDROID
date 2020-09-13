@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="12dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".RechercheActivity">
+
+    <EditText
+        android:id="@+id/editText_code"
+        android:layout_width="388dp"
+        android:layout_height="59dp"
+        android:background="@drawable/editext_rounder_courner"
+        android:ems="10"
+        android:hint="Entrer un code ici"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rechercher"
+        android:onClick="rechercher"
+        android:background="@drawable/btn_round"
+        app:layout_constraintTop_toBottomOf="@+id/editText_code"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="97dp" />
+
+    <TextView
+        android:id="@+id/textView_resultat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/editext_rounder_courner"
+        android:layout_marginTop="24dp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button_search"
+
+        tools:layout_editor_absoluteX="165dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
